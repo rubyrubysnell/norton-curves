@@ -5,5 +5,10 @@ function mouseWheel(event) {
     // if the user is scrolling quickly, it will be higher, and vice versa
     const deltaWheel = event.delta * 0.1
     //update offset
-    amp = amp + deltaWheel
+    test = a + deltaWheel
+    console.log(a)
+
+    if(test < 49 && test > -41){
+        a = a + deltaWheel
+    }
 }

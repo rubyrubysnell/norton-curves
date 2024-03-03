@@ -18,14 +18,19 @@ function transformPolarToCartesian(radius, theta) {
     return cartesianCoordinates;
 }
 
+let lineWeight = 0.5
+let a = 9
+
 function drawNorton() {
-    const a = 9
+
+background(0)
+
     const b = 16
     const c = 4
     let amp = 160
     beginShape()
     noFill()
-    strokeWeight(0.5)
+    strokeWeight(lineWeight)
     stroke(245,218,237)
     // 
     for (let t = 0; t <= TWO_PI + 0.001  ; t+=0.009) {
