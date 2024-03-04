@@ -20,13 +20,12 @@ function transformPolarToCartesian(radius, theta) {
 
 let lineWeight = 0.5
 let a = 9
+let c = 4
+let b = 40
 
 function drawNorton() {
 
-background(0)
-
-    const b = 16
-    const c = 4
+background(68,113,200)
     let amp = 160
     beginShape()
     noFill()
@@ -47,3 +46,4 @@ background(0)
     }
     endShape()
 }
+
