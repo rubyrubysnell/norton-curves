@@ -1,8 +1,10 @@
 /* style the whole body */
 
 body {
+
     /* prevents scrolling */
     overflow: hidden;
+
 }
 
 /*  styling the canvas */
@@ -10,17 +12,71 @@ body {
 canvas {
 
     /* allow it to overlap with other elements */
-
     position: absolute;
 
-    /* male sure top left corner is at html point of origin */
-
+    /* make sure top left corner is at html point of origin */
     top: 0;
     left: 0;
 
     /* send to back the with z-index property */
-
     z-index: -1;
 
+}
+
+/* styling the text */
+
+.text {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-bottom: 10px;
+    color: #f5daed;
+}
+
+/* styling the range sliders */
+
+input[type=range] {
+    cursor: pointer;
+    width: 250px;
+    /* remove default browser styling */
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+}
+
+/* styling track for all browsers except firefox */
+input[type="range"]::-webkit-slider-runnable-track {
+    height: 17px;
+    border-radius: 10px;
+    border: 2px solid #f5daed;
+}
+
+/* styling track for firefox */
+input[type="range"]::-moz-range-track {
+    height: 22px;
+    border-radius: 10px;
+    border: 2px solid #f5daed;
+}
+
+/* styling thumb for all browsers except firefox */
+input[type="range"]::-webkit-slider-thumb {
+    /* remove default browser styling */
+    -webkit-appearance: none;
+    appearance: none;
+    /* centering thumb on track */
+    margin-top: -1px;
+    height: 15px;
+    width: 15px;
+    border-radius: 7px;
+    border: 2px solid #f5daed;
+}
+
+/* styling thumb for firefox */
+input[type="range"]::-moz-range-thumb {
+    /* remove default browser styling */
+    border: none;
+    background-color: #000000;
+    height: 15px;
+    width: 15px;
+    border-radius: 7px;
+    border: 2px solid #f5daed;
 }
 

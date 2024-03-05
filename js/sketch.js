@@ -1,38 +1,32 @@
-let aSlider, bSlider, cSlider
-let aVal, bVal, cVal
-
 function setup() {
+
+    // fill the browser window
 
     createCanvas(windowWidth, windowHeight);
 
+    // blue background
+
     background(68,113,200)
 
-    aSlider = createSlider(-25, 25, 9, 1)
-    aVal = createDiv()
+    // draw the sliders, from the helpers
 
-    bSlider = createSlider(3, 40, 16, 1)
-    bVal = createDiv()
-
-    cSlider = createSlider(-15, 15, 4, 1)
-    cVal = createDiv()
+    setUpSliders()
 
 }
   
 function draw() {
+
+    // centre the graphic
     
     translate(width / 2, height / 2)
 
+    // draw the graphic, from the helpers
+
     drawNorton()
 
-    a = aSlider.value()
+    // draw according to the slider values, from the helpers
 
-    b = bSlider.value()
-
-    c = cSlider.value()
-
-    aVal.html("a")
-    bVal.html("b")
-    cVal.html("c")
+    updateSliders()
 
 }
 
